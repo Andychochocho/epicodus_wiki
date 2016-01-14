@@ -1,3 +1,7 @@
 ul {
   list-style-type: none !important;
 }
+#css-example {
+  color: blue;
+  text-align: center;
+}
