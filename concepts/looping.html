@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Looping</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Looping</h1>
+        <p>JavaScript loops are used to repeatedly run a block of code - until a certain condition is met. When developers talk about iteration or iterating over, say, an array, it is the same as looping. JavaScript offers several options to repeatedly run a block of code, including while, do while, for and for-in.</p>
+      <pre>
+        Example One
+
+        **WITHIN THE JAVASCRIPT CONSOLE**
+
+        for (var index = 1; index <= 3; index += 1) {
+          alert(index);
+        }
+
+        ((This will run an alert that will pop up three times counting from 1-3))
+
+        **DESCRIPTION**
+
+        Here's how the for loop works:
+        The for statement takes three parameters: initialization, condition, and final expression.
+        1. The initialization parameter lets you initialize a variable. In this case, we've
+        initialized a variable called index that starts at 1.
+        2. The condition parameter tells the for loop when to stop running. In this case, we've said to stop looping when index reaches 3.
+        3. The final expression parameter says to add 1 to the index parameter after each time through the loop.
+
+        Example Two (Using .forEach method instead of for)
+
+          **WITHIN THE JAVASCRIPT CONSOLE**
+
+          > var languages = ['HTML', 'CSS', 'JavaScript'];
+          undefined
+          > languages.forEach(function(language) {
+            alert('I love ' + language + '!');
+          });
+
+          ((This will run an alert that will pop up three times saying I love html
+          then I love css and then a last alert with I love Javascript))
+
+          **DESCRIPTION**
+
+          1. Setting the variable (typically as plural) as array of Html, CSS, and Javascript
+          2. The output should be undefined.
+          3. What this line is doing in step three is the function intiates the method (.forEach) with the variable (languages).
+          4. Sends out a first alert with "I love HTML," then a second alert "I love CSS," and a final alert with "I love Javascript".
+
+      </pre>
+  </div>
+  </body>
+</html>

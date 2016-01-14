@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Branching</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Branching</h1>
+        <p>The new part of the JavaScript is called an if...else statement, or a branch. If the condition in the parentheses is true, then the first statement is run. If not, the statement following the else keyword is run. The curly braces after the if statement don't end with a semicolon. This is because an if statement isn't a statement itself; rather, it's a collection of statements. Or something like that. Just know that it's a rule: no semicolons after the curly braces for if statements.</p>
+      <pre>
+
+        **WITHIN THE SCRIPTS.JS FILE**
+
+      $(document).ready(function() {
+        var age = parseInt(prompt("How old are you?"));
+
+        if (age > 21) {
+          $('#drinks').show();
+        } else if (age === 21) {
+          alert("Now don't go crazy!");
+          $('#drinks').show();
+        } else {
+          $('#under-21').show();
+        }
+      });
+
+        **DESCRIPTION**
+
+        Here's how the for branch works:
+
+        The parseInt is converting a logged input of a string into an interger from the user and setting the variable to age.
+        (ParseFloat would be for intergers that aren't whole numbers.
+
+        1. Setting the variable (age) to prompt a question ('How old are you?')
+        2. If the age is greater than 21
+        3. The ID drinks will show
+        4. If the age is equal to 21 then it will not only show the ID drinks, but it will give an alert.
+        5. Else is saying "if the interger is anything else"
+        6. then the id under-21 will show.
+      </pre>
+  </div>
+  </body>
+</html>
