@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Cascading</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cascading</h1>
+      <p>Cascading Style Sheets or CSS are set up so that you can have many properties all affecting the same element. Some of those properties may conflict with one another. For example, you might set a font color of red on the paragraph tag and then later on set a font color of blue. How does the browser know which color to make the paragraphs? This is decided by the cascade.</p>
+      <pre>
+        **WITHIN THE CSS FILE**
+
+        .digital p {
+        &nbsp;&nbsp;background-color: red;
+        }
+
+        **WITHIN THE HTML FILE**
+
+        &lt;div class="digital">
+        &nbsp;&lt;p>ABCDEF&lt;/p>
+        &lt;/div>
+
+        **DESCRIPTION**
+
+        As you can see in our example, the p is nested inside of our digital class. This idea of being able to nest without any conflicts is
+        the idea behind cascades.
+      </pre>
+  </div>
+  </body>
+</html>
