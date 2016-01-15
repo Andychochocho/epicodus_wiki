@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>jQuery Attributes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>jQuery Attributes</h1>
+        <p>Adds classes to Javascripts.</p>
+      <pre>
+
+        **WITHIN THE SCRIPTS.JS FILE**
+
+        $("button#green").click(function() {
+          $("body").css("background-color", "green");
+          $("body").toggle();
+        });
+
+        **DESCRIPTION**
+
+        So when you click the button, the background in the body will turn green.
+        Try it for yourself!
+
+        <button class="btn btn-success" id="green">Change me!</button>
+
+      </pre>
+  </div>
+  </body>
+</html>
